@@ -89,4 +89,7 @@ export default new Vuex.Store({
   actions: {
 
   },
+  getters: {
+    getAllProducts: state => state.boots.concat(state.smartphones),
+  },
 });
